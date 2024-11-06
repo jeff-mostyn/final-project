@@ -9,26 +9,49 @@ Before submitting your first milestone, _you must get your project idea and scop
 Start off by forking this repository. In your README, write a design doc to outline your project goals and implementation plan. It must include the following sections:
 
 #### Introduction
-- What motivates your project?
+For a couple of years on and off, I have been using free time to work on a racing game in Unreal Engine with some friends of mine. However, as a small team we have been often plagued by bottlenecks, especially when it comes to art assets. Since our game takes place largely in city environments, a number of assets are needed to create a believable, unique space that does not feel empty. When we began our assignment to make a basic building generator, I thought that a tool like that, applied to our game, could save us a significant amount of time. As I grew in confidence and understanding of Houdini, I came to decide that I wanted to create a such a tool that would be usable for us and teams like ours.
 
 #### Goal
-- What do you intend to achieve with this project?
+The end goal of this project is to create a plugin tool for Unreal Engine that artists can use to speed up their level environment population workflow by generating varied buildings from parameter sets rather than making them from scratch. 
 
 #### Inspiration/reference:
 - You must have some form of reference material for your final project. Your reference may be a research paper, a blog post, some artwork, a video, another class at Penn, etc.  
 - Include in your design doc links to and images of your reference material.
 
 #### Specification:
-- Outline the main features of your project.
+- Houdini HDA that generates houses/buildings procedurally from a set of inputs. Breadth of features that can be added in the generation will depend on available time, but will at the very least include building dimensions, doors, windows, decks/balconies, and edge accents.
+- The HDA will have "default" assets for features such as windows, doors, accents, etc.
+- A direct Unreal Engine interface/plugin that communicates with the Houdini HDA
+- Assuming it is technologically possible, I want the Unreal Engine interface to allow for the artist using it to select custom assets from their computer to use for windows, doors, and the like.
+- The output of the HDA will create a building directly in Unreal Engine, which can have Unreal Engine materials 
 
 #### Techniques:
-- What are the main technical/algorithmic tools you’ll be using? Give an overview, citing specific papers/articles.
+- The bulk of the procedural work will be done in Houdini. There are presently no specific algorithms that are being investigated for use.
+- I will be making use of [Houdini-Unreal Engine integration](https://www.sidefx.com/docs/unreal16.5/index.html)
 
 #### Design:
 - How will your program fit together? Make a simple free-body diagram illustrating the pieces.
 
 #### Timeline:
-- Create a week-by-week set of milestones for each person in your group. Make sure you explicitly outline what each group member's duties will be.
+- Week 1
+  - Integrate basic generator HDA into Unreal Engine
+  - Establish workflow for building generation in-engine
+  - Determine if material application onto generated building works as desired out-of-the-box - does each individual piece accept its own material? Do materials "slots" need to be made in advance in Houdini?
+  - If materials need extra work to function as intended, perform that work
+ 
+- Week 2
+  - Determine viability of custom asset importing through UE5
+    - If it is not possible, modify HDA to accept non-Houdini assets via Houdini, and select them via a parameter in the interface
+  - Move to additional feature work on building generator. Examples:
+    - Deck roofs (tiled/shingled)
+    - Increased control of ratio of windows to doors, especially on first floor
+    - Added variation for corner pillars
+    - Parameterization of deck/balcony posts
+   
+- Final
+  - Continued polish on generator
+  - Create sample assets in Maya (meshes) and Unreal Engine (materials)
+  - Make demo video
 
 Submit your Design doc as usual via pull request against this repository.
 ## Milestone 1: Implementation part 1 (due 11/13)
