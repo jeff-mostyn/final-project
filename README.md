@@ -15,8 +15,8 @@ For a couple of years on and off, I have been using free time to work on a racin
 The end goal of this project is to create a plugin tool for Unreal Engine that artists can use to speed up their level environment population workflow by generating varied buildings from parameter sets rather than making them from scratch. 
 
 #### Inspiration/reference:
-- You must have some form of reference material for your final project. Your reference may be a research paper, a blog post, some artwork, a video, another class at Penn, etc.  
-- Include in your design doc links to and images of your reference material.
+- I am using the previous [Building Generation Homework](https://github.com/jeff-mostyn/hw03-buildings) as a baseline for this project.
+- Said homework itself is based on a [tutorial video](https://www.youtube.com/watch?v=uIe97023sDk&t=979s&ab_channel=SimonHoudini) on using Houdini to make a building generator. Both the original homework and this extension will further expand upon the concept presented here.
 
 #### Specification:
 - Houdini HDA that generates houses/buildings procedurally from a set of inputs. Breadth of features that can be added in the generation will depend on available time, but will at the very least include building dimensions, doors, windows, decks/balconies, and edge accents.
