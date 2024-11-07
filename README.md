@@ -30,7 +30,8 @@ The end goal of this project is to create a plugin tool for Unreal Engine that a
 - I will be making use of [Houdini-Unreal Engine integration](https://www.sidefx.com/docs/unreal16.5/index.html)
 
 #### Design:
-- How will your program fit together? Make a simple free-body diagram illustrating the pieces.
+![image](https://github.com/user-attachments/assets/b1c0afe5-9bc1-4fc3-89e7-984ce11e61cc)
+
 
 #### Timeline:
 - Week 1
