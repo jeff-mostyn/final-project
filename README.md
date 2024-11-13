@@ -54,7 +54,7 @@ The end goal of this project is to create a plugin tool for Unreal Engine that a
   - Create sample assets in Maya (meshes) and Unreal Engine (materials)
   - Make demo video
 
-#### Milstone 1
+#### Milestone 1
 
 ## Progress
 - Successfully attached original building generator HDA to an existing Unreal Engine project
@@ -66,9 +66,15 @@ The end goal of this project is to create a plugin tool for Unreal Engine that a
   
 - Researched and learned how to reference UE5 materials directly within an attached HDA. Applied this to my project.
 - Figured out how to use UE5 materials as inputs to the HDA, enabling swapping of materials without leaving the engine.
+
+![](https://github.com/jeff-mostyn/final-project/blob/main/Images/changingMatsGif.gif)
+
 - Created basic set of material parameters, and updated the HDA node network to enable all parts to have their materials driven by those parameters
 - Since I was ahead of schedule, I looked towards my week 2 goals, and figured out how to pass custom geometry as parameters into the HDA
 - Updated the HDA node network to support parameterized geometry for windows and doors
+
+![image](https://github.com/user-attachments/assets/42b9acc1-6aee-45b5-9149-b54e4f02c20e)
+(The doors are currently tiny, as explained below)
 
 ## Shortfall
 - Sizing of parameter geometry is currently causing issues. Custom doors are coming in very small. I think I will again need to update the HDA such that scales/transforms of custom geometry can be manipulated from UE5 interface.
