@@ -54,9 +54,9 @@ The end goal of this project is to create a plugin tool for Unreal Engine that a
   - Create sample assets in Maya (meshes) and Unreal Engine (materials)
   - Make demo video
 
-#### Milestone 1
+## Milestone 1
 
-## Progress
+### Progress
 - Successfully attached original building generator HDA to an existing Unreal Engine project
 - Fixed issues within the generator which prevented it from working.
   - The "default" window, door, and balcony assets were assembled in separate geometry nodes. These had to be remade into subnets within the HDA
@@ -76,7 +76,7 @@ The end goal of this project is to create a plugin tool for Unreal Engine that a
 ![image](https://github.com/user-attachments/assets/42b9acc1-6aee-45b5-9149-b54e4f02c20e)
 (The doors are currently tiny, as explained below)
 
-## Shortfall
+### Shortfalls
 - Sizing of parameter geometry is currently causing issues. Custom doors are coming in very small. I think I will again need to update the HDA such that scales/transforms of custom geometry can be manipulated from UE5 interface.
 
 Submit your Design doc as usual via pull request against this repository.
