@@ -79,6 +79,21 @@ The end goal of this project is to create a plugin tool for Unreal Engine that a
 ### Shortfalls
 - Sizing of parameter geometry is currently causing issues. Custom doors are coming in very small. I think I will again need to update the HDA such that scales/transforms of custom geometry can be manipulated from UE5 interface.
 
+
+## Milestone 2
+
+### Progress
+- Finalized imported geometry procedure. Added transformation manipulation to adjust position relative to default, as well as scale. Custom assets fed to Houdini via UE5 maintain their UVs and so can have custom materials applied
+- Added support for custom windows and deck rail posts
+- Augmented functionality of building generator
+  - Added procedural tile rooves over the uppermost full-length decks
+  - Added support pillars on wraparound decks, if the next floor up also has a deck, or if it is the highest floor
+  - Added pillar variety to include a stone pattern
+  - Fixed outstanding issue where full-length balconies did not have rails on the ends (perpendicular to wall)
+
+### Shortfalls
+- Asset placement logic nees to be updated. All doors on floors that have even 1 full-length balcony appear without individual balconies. This can lead to doors to nowhere. Additionally, having better control over relative quantity of doors and windows would be ideal.
+
 Submit your Design doc as usual via pull request against this repository.
 ## Milestone 1: Implementation part 1 (due 11/13)
 Begin implementing your engine! Don't worry too much about polish or parameter tuning -- this week is about getting together the bulk of your generator implemented. By the end of the week, even if your visuals are crude, the majority of your generator's functionality should be done.
