@@ -91,6 +91,10 @@ The end goal of this project is to create a plugin tool for Unreal Engine that a
   - Added pillar variety to include a stone pattern
   - Fixed outstanding issue where full-length balconies did not have rails on the ends (perpendicular to wall)
 
+- Overview image of generated houses with Milestone 2 progress
+![image](https://github.com/user-attachments/assets/2cc03080-9b11-47f6-8320-0d4bc6a198f4)
+
+
 ### Shortfalls
 - Asset placement logic nees to be updated. All doors on floors that have even 1 full-length balcony appear without individual balconies. This can lead to doors to nowhere. Additionally, having better control over relative quantity of doors and windows would be ideal.
 
