@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\jeffm\\Documents\\GitHub\\CIS5660\\final-project\\Unreal Project\\BuildingGenDemo\\Plugins\\HoudiniEngine\\Source\\HoudiniEngineEditor\\HoudiniEngineEditor.Build.cs",
+		"C:\\Users\\jeffm\\Documents\\GitHub\\CIS5660\\final-project\\Unreal Project\\BuildingGenDemo\\Plugins\\HoudiniEngine\\Source\\HoudiniEngineRuntime\\HoudiniEngineRuntime.Build.cs",
+		"C:\\Users\\jeffm\\Documents\\GitHub\\CIS5660\\final-project\\Unreal Project\\BuildingGenDemo\\Plugins\\HoudiniEngine\\Source\\HoudiniEngine\\HoudiniEngine.Build.cs"
+	],
+	"EngineVersion": "5.3.2"
+}
