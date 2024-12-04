@@ -98,27 +98,31 @@ The end goal of this project is to create a plugin tool for Unreal Engine that a
 ### Shortfalls
 - Asset placement logic nees to be updated. All doors on floors that have even 1 full-length balcony appear without individual balconies. This can lead to doors to nowhere. Additionally, having better control over relative quantity of doors and windows would be ideal.
 
-Submit your Design doc as usual via pull request against this repository.
-## Milestone 1: Implementation part 1 (due 11/13)
-Begin implementing your engine! Don't worry too much about polish or parameter tuning -- this week is about getting together the bulk of your generator implemented. By the end of the week, even if your visuals are crude, the majority of your generator's functionality should be done.
 
-Put all your code in your forked repository.
+## Final Submission
 
-Submission: Add a new section to your README titled: Milestone #1, which should include
-- written description of progress on your project goals. If you haven't hit all your goals, what's giving you trouble?
-- Examples of your generators output so far
-We'll check your repository for updates. No need to create a new pull request.
-## Milestone 2: Implementation part 2 (due 11/25)
-We're over halfway there! This week should be about fixing bugs and extending the core of your generator. Make sure by the end of this week _your generator works and is feature complete._ Any core engine features that don't make it in this week should be cut! Don't worry if you haven't managed to exactly hit your goals. We're more interested in seeing proof of your development effort than knowing your planned everything perfectly. 
+### Post-Mortem
 
-Put all your code in your forked repository.
+This project, despite initial expectations, went fairly smoothly. There were minimal problems encountered, and much of what I feared would involve lengthy implementation time was more or less straightforward. The crowning example of this was in importing mesh assets into the Houdini HDA via Unreal Engine. As it turns out, on the HDA Type Properties, you are able to arbitrarily increase the number of inputs, and even give each one a custom name, which appear in the Unreal Engine interface natively (pictured below)
 
-Submission: Add a new section to your README titled: Milestone #3, which should include
-- written description of progress on your project goals. If you haven't hit all your goals, what did you have to cut and why? 
-- Detailed output from your generator, images, video, etc.
-We'll check your repository for updates. No need to create a new pull request.
+![image](https://github.com/user-attachments/assets/14b1002a-ba0f-4a44-b93f-9a78226e3299)
 
-Come to class on the due date with a WORKING COPY of your project. We'll be spending time in class critiquing and reviewing your work so far.
+Ironically, one of the larger hurdles I have run into has been in preparing my final submission for this project. Up to this point, I had been experimenting with the HDA in a separate Unreal Engine project which I had already configured. However, in the process of setting up the project that can be found in this repository, I found an error where attempting to save the level which contains an HDA instance causes the engine to cease responding, requiring Task Manager to close it down. It seems that otherwise everything checks out, I'm able to interact with the HDA, make adjustments, but the act of saving caused a problem. If a solution is found between the time of writing this and submitting the project, I will note as much here. But this aside, there were no real problems to speak of, meaning that I never really had to stray from my original plan, excepting scenarios where a certain item took slightly more or less time as compared to my initial expectations.
+
+Beyond that, I am fairly happy with what I have been able to create here. The additions I made within the generator to further come into line with the architectural style I was pursuing definitely help sell that feeling. Improving the floor-length decks, setting tiled rooves overtop of them, and adding various support structures to the decks (posts and below-deck struts) increase the "realism" / "authenticity" of the buildings. Beyond that, being able to simply create new doors and windows and texture them freely as though they were standalone items gives miles more flexibility to this tool. While I would have liked to have been able to implement other swappable assets and ornamentation given more time, as a baseline the product I've created met all the goals I really wanted it to. It is extremely simple to use and update, which was the primary objective for me, as I think in a cooperative scenario I could easily hand this off to an artist with a brief explanation, and they should have little issue making use of the tool.
+
+### Example Images
+
+![image](https://github.com/user-attachments/assets/3adf7d13-4267-449a-ae8d-71d8d233c2ea)
+
+![image](https://github.com/user-attachments/assets/a195900d-3ec5-49df-ab8c-95406b29ba53)
+
+![image](https://github.com/user-attachments/assets/a07243e0-d01c-4942-8c3d-c018236bdb83)
+
+### Live Demo
+
+[Youtube live demo](https://youtu.be/PY_T6Kcm6AQ)
+
 
 ## Final submission (due 12/2)
 Time to polish! Spen this last week of your project using your generator to produce beautiful output. Add textures, tune parameters, play with colors, play with camera animation. Take the feedback from class critques and use it to take your project to the next level.
@@ -129,57 +133,3 @@ Submission:
 - Update your README with two sections 
   - final results with images and a live demo if possible
   - post mortem: how did your project go overall? Did you accomplish your goals? Did you have to pivot?
-
-## Topic Suggestions
-
-### Create a generator in Houdini
-
-### A CLASSIC 4K DEMO
-- In the spirit of the demo scene, create an animation that fits into a 4k executable that runs in real-time. Feel free to take inspiration from the many existing demos. Focus on efficiency and elegance in your implementation.
-- Example: 
-  - [cdak by Quite & orange](https://www.youtube.com/watch?v=RCh3Q08HMfs&list=PLA5E2FF8E143DA58C)
-
-### A RE-IMPLEMENTATION
-- Take an academic paper or other pre-existing project and implement it, or a portion of it.
-- Examples:
-  - [2D Wavefunction Collapse Pokémon Town](https://gurtd.github.io/566-final-project/)
-  - [3D Wavefunction Collapse Dungeon Generator](https://github.com/whaoran0718/3dDungeonGeneration)
-  - [Reaction Diffusion](https://github.com/charlesliwang/Reaction-Diffusion)
-  - [WebGL Erosion](https://github.com/LanLou123/Webgl-Erosion)
-  - [Particle Waterfall](https://github.com/chloele33/particle-waterfall)
-  - [Voxelized Bread](https://github.com/ChiantiYZY/566-final)
-
-### A FORGERY
-Taking inspiration from a particular natural phenomenon or distinctive set of visuals, implement a detailed, procedural recreation of that aesthetic. This includes modeling, texturing and object placement within your scene. Does not need to be real-time. Focus on detail and visual accuracy in your implementation.
-- Examples:
-  - [The Shrines](https://github.com/byumjin/The-Shrines)
-  - [Watercolor Shader](https://github.com/gracelgilbert/watercolor-stylization)
-  - [Sunset Beach](https://github.com/HanmingZhang/homework-final)
-  - [Sky Whales](https://github.com/WanruZhao/CIS566FinalProject)
-  - [Snail](https://www.shadertoy.com/view/ld3Gz2)
-  - [Journey](https://www.shadertoy.com/view/ldlcRf)
-  - [Big Hero 6 Wormhole](https://2.bp.blogspot.com/-R-6AN2cWjwg/VTyIzIQSQfI/AAAAAAAABLA/GC0yzzz4wHw/s1600/big-hero-6-disneyscreencaps.com-10092.jpg)
-
-### A GAME LEVEL
-- Like generations of game makers before us, create a game which generates an navigable environment (eg. a roguelike dungeon, platforms) and some sort of goal or conflict (eg. enemy agents to avoid or items to collect). Aim to create an experience that will challenge players and vary noticeably in different playthroughs, whether that means procedural dungeon generation, careful resource management or an interesting AI model. Focus on designing a system that is capable of generating complex challenges and goals.
-- Examples:
-  - [Rhythm-based Mario Platformer](https://github.com/sgalban/platformer-gen-2D)
-  - [Pokémon Ice Puzzle Generator](https://github.com/jwang5675/Ice-Puzzle-Generator)
-  - [Abstract Exploratory Game](https://github.com/MauKMu/procedural-final-project)
-  - [Tiny Wings](https://github.com/irovira/TinyWings)
-  - Spore
-  - Dwarf Fortress
-  - Minecraft
-  - Rogue
-
-### AN ANIMATED ENVIRONMENT / MUSIC VISUALIZER
-- Create an environment full of interactive procedural animation. The goal of this project is to create an environment that feels responsive and alive. Whether or not animations are musically-driven, sound should be an important component. Focus on user interactions, motion design and experimental interfaces.
-- Examples:
-  - [The Darkside](https://github.com/morganherrmann/thedarkside)
-  - [Music Visualizer](https://yuruwang.github.io/MusicVisualizer/)
-  - [Abstract Mesh Animation](https://github.com/mgriley/cis566_finalproj)
-  - [Panoramical](https://www.youtube.com/watch?v=gBTTMNFXHTk)
-  - [Bound](https://www.youtube.com/watch?v=aE37l6RvF-c)
-
-### YOUR OWN PROPOSAL
-- You are of course welcome to propose your own topic . Regardless of what you choose, you and your team must research your topic and relevant techniques and come up with a detailed plan of execution. You will meet with some subset of the procedural staff before starting implementation for approval.
