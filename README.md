@@ -140,7 +140,7 @@ To test the HDA
 
 7. Custom meshes live in the `DemoFiles\Houdini\Meshes` folder, and can be dragged into the `Houdini Inputs` slots. To apply materials, right click the material in the `DemoFiles\Houdini\Materals` folder, and `Copy Reference`, then paste that into any of the "Material Reference" labeled text boxes in the HDA interface.
 
-8. Custom mesh assets' scales are under `Houdini Inputs`, and default to 0, 0, 0. In order for the mesh to display properly, you will have to change the associated scale value. The recommended range is [0, 1], where 1 will have the asset scaled to the full height of a floor.
+8. Custom mesh assets' scales are towards the bottom of the `Houdini Parameters` section, and default to 0, 0, 0. In order for the mesh to display properly, you will have to change the associated scale value. The recommended range is [0, 1], where 1 will have the asset scaled to the full height of a floor.
 
 ### IMPORTANT
 
