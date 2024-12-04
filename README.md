@@ -111,6 +111,12 @@ Ironically, one of the larger hurdles I have run into has been in preparing my f
 
 Beyond that, I am fairly happy with what I have been able to create here. The additions I made within the generator to further come into line with the architectural style I was pursuing definitely help sell that feeling. Improving the floor-length decks, setting tiled rooves overtop of them, and adding various support structures to the decks (posts and below-deck struts) increase the "realism" / "authenticity" of the buildings. Beyond that, being able to simply create new doors and windows and texture them freely as though they were standalone items gives miles more flexibility to this tool. While I would have liked to have been able to implement other swappable assets and ornamentation given more time, as a baseline the product I've created met all the goals I really wanted it to. It is extremely simple to use and update, which was the primary objective for me, as I think in a cooperative scenario I could easily hand this off to an artist with a brief explanation, and they should have little issue making use of the tool.
 
+
+### Live Demo
+
+[Youtube live demo](https://youtu.be/PY_T6Kcm6AQ)
+
+
 ### Example Images
 
 ![image](https://github.com/user-attachments/assets/3adf7d13-4267-449a-ae8d-71d8d233c2ea)
@@ -119,17 +125,3 @@ Beyond that, I am fairly happy with what I have been able to create here. The ad
 
 ![image](https://github.com/user-attachments/assets/a07243e0-d01c-4942-8c3d-c018236bdb83)
 
-### Live Demo
-
-[Youtube live demo](https://youtu.be/PY_T6Kcm6AQ)
-
-
-## Final submission (due 12/2)
-Time to polish! Spen this last week of your project using your generator to produce beautiful output. Add textures, tune parameters, play with colors, play with camera animation. Take the feedback from class critques and use it to take your project to the next level.
-
-Submission:
-- Push all your code / files to your repository
-- Come to class ready to present your finished project
-- Update your README with two sections 
-  - final results with images and a live demo if possible
-  - post mortem: how did your project go overall? Did you accomplish your goals? Did you have to pivot?
