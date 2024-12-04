@@ -1,9 +1,4 @@
-# Final Project!
-
-This is it! The culmination of your procedural graphics experience this semester. For your final project, we'd like to give you the time and space to explore a topic of your choosing. You may choose any topic you please, so long as you vet the topic and scope with an instructor or TA. We've provided some suggestions below. The scope of your project should be roughly 1.5 homework assignments). To help structure your time, we're breaking down the project into 4 milestones:
-
-## Project planning: Design Doc (due 11/6)
-Before submitting your first milestone, _you must get your project idea and scope approved by Rachel, Adam or a TA._
+# Houdini Building Generator HDA, Integrated With Unreal Engine 5
 
 ### Design Doc
 Start off by forking this repository. In your README, write a design doc to outline your project goals and implementation plan. It must include the following sections:
@@ -143,4 +138,6 @@ To test the HDA
 
 6. Change any of the values under `Houdini Parameters` or `Houdini Inputs` to kick off changes.
 
-  **IMPORTANT: DO NOT SAVE THIS SCENE AFTER EDITING THE HDA SETTINGS** There is an ongoing issue whose cause I have not been able to identify, which causes cooked temp meshes from the HDA plugin to be generated in the wrong place/not at all. Saving or trying to bake will result in an engine freeze, and if the scene is saved at such a time, it will most probably become unusable. If this happens, in order to test the HDA you will need to make a new level, and drop the imported HDA (located in the folder `final-project\Unreal Project\BuildingGenDemo\Content\DemoFiles\Houdini`) into that scene. Despite this issue, normal HDA behavior works as expected, so you can interact with the actor in the scene, edit values in its interface, and watch as Houdini processes and updates the actor in the level. It is just saving and baking that are not usable.
+### IMPORTANT
+
+**DO NOT SAVE THIS SCENE AFTER EDITING THE HDA SETTINGS** There is an ongoing issue whose cause I have not been able to identify, which causes cooked temp meshes from the HDA plugin to be generated in the wrong place/not at all. Saving or trying to bake will result in an engine freeze, and if the scene is saved at such a time, it will most probably become unusable. If this happens, in order to test the HDA you will need to make a new level, and drop the imported HDA (located in the folder `final-project\Unreal Project\BuildingGenDemo\Content\DemoFiles\Houdini`) into that scene. Despite this issue, normal HDA behavior works as expected, so you can interact with the actor in the scene, edit values in its interface, and watch as Houdini processes and updates the actor in the level. It is just saving and baking that are not usable.
