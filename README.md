@@ -138,6 +138,10 @@ To test the HDA
 
 6. Change any of the values under `Houdini Parameters` or `Houdini Inputs` to kick off changes.
 
+7. Custom meshes live in the `DemoFiles\Houdini\Meshes` folder, and can be dragged into the `Houdini Inputs` slots. To apply materials, right click the material in the `DemoFiles\Houdini\Materals` folder, and `Copy Reference`, then paste that into any of the "Material Reference" labeled text boxes in the HDA interface.
+
+8. Custom mesh assets' scales are under `Houdini Inputs`, and default to 0, 0, 0. In order for the mesh to display properly, you will have to change the associated scale value. The recommended range is [0, 1], where 1 will have the asset scaled to the full height of a floor.
+
 ### IMPORTANT
 
 **DO NOT SAVE THIS SCENE AFTER EDITING THE HDA SETTINGS** There is an ongoing issue whose cause I have not been able to identify, which causes cooked temp meshes from the HDA plugin to be generated in the wrong place/not at all. Saving or trying to bake will result in an engine freeze, and if the scene is saved at such a time, it will most probably become unusable. If this happens, in order to test the HDA you will need to make a new level, and drop the imported HDA (located in the folder `final-project\Unreal Project\BuildingGenDemo\Content\DemoFiles\Houdini`) into that scene. Despite this issue, normal HDA behavior works as expected, so you can interact with the actor in the scene, edit values in its interface, and watch as Houdini processes and updates the actor in the level. It is just saving and baking that are not usable.
