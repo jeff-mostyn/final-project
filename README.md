@@ -125,3 +125,22 @@ Beyond that, I am fairly happy with what I have been able to create here. The ad
 
 ![image](https://github.com/user-attachments/assets/a07243e0-d01c-4942-8c3d-c018236bdb83)
 
+## Demo information
+
+This repoository contains a Unreal Engine 5.3 project, that should come pre-prepared with the Houdini Engine plugin (though it will need to compile before running). 
+
+To test the HDA
+
+1. Go to the level `final-project\Unreal Project\BuildingGenDemo\Content\DemoFiles\Demo`, and interact with the HDA actor in the level.
+
+2. Ensure that your Houdini has the Houdini Engine Plugin installed
+
+3. Open Houdini (NOT Apprentice License), and click `Windows > Houdini Engine Session Sync > Start`
+
+4. In Unreal Engine, click `Houdini Engine > Connect Session`. If this gives a failure message, try `Houdini Engine > Restart Session`. With the session connected, you will be able to edit values in the HDA interface and watch as Houdini processes the changes and generates an output.
+
+5. Click the HDA actor in the level (or drag the HDA from the content browser into the level), and then in its details, click the `HoudiniAssetComponent`. This is where the HDA interface lives.
+
+6. Change any of the values under `Houdini Parameters` or `Houdini Inputs` to kick off changes.
+
+  **IMPORTANT: DO NOT SAVE THIS SCENE AFTER EDITING THE HDA SETTINGS** There is an ongoing issue whose cause I have not been able to identify, which causes cooked temp meshes from the HDA plugin to be generated in the wrong place/not at all. Saving or trying to bake will result in an engine freeze, and if the scene is saved at such a time, it will most probably become unusable. If this happens, in order to test the HDA you will need to make a new level, and drop the imported HDA (located in the folder `final-project\Unreal Project\BuildingGenDemo\Content\DemoFiles\Houdini`) into that scene. Despite this issue, normal HDA behavior works as expected, so you can interact with the actor in the scene, edit values in its interface, and watch as Houdini processes and updates the actor in the level. It is just saving and baking that are not usable.
